@@ -1,0 +1,580 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+    
+}
+ 
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+h2{
+    margin-top: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.container{
+    width:100%;
+   
+}
+header{
+    width:100%;
+    background-color: rgb(24, 22, 22);
+    height:80px;
+     padding:0px 20px;
+    font-size: 30px;
+    /* text-align: center; */
+   display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+    top:0;
+    
+}
+#logo{
+    width:90px;
+    height:90px;
+    border:2px solid white;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    transition:0.5s   
+}
+#logo:hover{
+    background-color: rgb(251, 255, 0);
+    color:rgb(255, 0, 234);
+}
+nav ul{
+    list-style:none;
+    display:flex;
+}
+ nav ul li{
+    display:inline-block;
+    
+} 
+nav ul li a{
+     display:block; 
+    text-decoration: none;
+    color:white;
+    padding:10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition:0.5s;
+}
+nav ul li a:hover{
+    background-color: white;
+    color:black;
+}
+main{
+    width:100%;
+}
+
+section.banner{
+   
+    width:100%;
+    height:85vh;
+    background-color: rgb(247, 234, 234);
+    font-size: 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner1,.banner2,.banner3,.banner4{
+   
+    margin-top: 10px;
+    height:85vh;
+    width:100%;
+    position :absolute;
+   left:0%
+   
+}
+.imagesB{
+    width:100%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    height:85vh;
+}
+
+.text-box{
+    width:600px;
+    position:absolute;
+    top:200px;
+    left:100px;
+    color:white;
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;;
+}
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+section.sec-1{
+    margin-top:10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.sec-1 #Images-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  .sec-1 #Images-container .image-Box {
+    width: 31%;
+    background-color: rgb(245, 240, 245);
+    height: 300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(235, 238, 240);
+    
+  }
+  #Images-container .image-Box .imgBx{
+       max-width:240px;
+       flex :0 0 240px;
+      
+  }
+  .MenuImg{
+    max-width:90%;
+    height: 35vh;
+  }
+  
+#Images-container .image-Box .imgBx .content{
+    margin-left: 5px;  
+}
+.btns
+  {
+      display: flex;
+      justify-content:center;
+  }
+  .btn
+  {
+      width: 90px;
+      padding: 5px;
+      margin:10px;
+      font-size: 20px;
+      background-color:rgb(155, 37, 7);
+      color: white;
+      border: none;
+      border-radius: 10px;
+  }
+
+section.sec-2{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section.sec-2::after{
+    content:'';
+    display:block;
+    clear:both;
+
+}
+section.sec-2 article{
+    float:left;
+    width:45%;
+    height:500px;
+    margin-left: 5px;
+    background-color: rgb(194, 92, 9);
+}
+#aboutimg{
+     width:100%;
+     height:500px;
+}
+#Aboutcontent{
+    margin-left: 50px;
+    width:80%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+section.sec-2 aside{
+    width:45%;
+    float:right;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    /* background-color: rgb(243, 0, 0);*/
+} 
+section.sec-2 aside article{
+    width:100%;
+    background-color: white;
+    height:110%;
+       
+}
+
+
+section.sec-3{
+    width:100%;
+    height:380px;
+    margin-top: 30px;
+     display: flex;
+      justify-content: space-evenly;
+      align-content: center; 
+}
+section.sec-3 .grid{
+    width:23%;
+    height:100%;
+    background-color: rgb(98, 223, 15);
+}
+section.sec-3 .grid .gridimg{
+    width:100%;
+    height:100%;
+}
+
+.container2{
+    position: relative;
+    margin-top: 15px;
+     width:100%;
+     height:75vh;
+     background-color: black;
+     display: flex;
+      justify-content: center;
+      align-content: center; 
+      overflow: hidden;
+}
+.swiper-container{
+    width:100%;
+    padding-top:30px;
+    padding-bottom: 50px;
+ 
+ }
+ .test {
+     position: relative;
+     max-width: 100%;
+     -webkit-box-reflect: below 1px linear-gradient(transparent 70%,#000900);
+ }
+ 
+ .swiper-slide {
+    
+     background-position: center;
+     background-size: cover;
+     width: 300px;
+     min-height: 300px;
+    margin:0 20px;
+     background: #fff;
+   }
+   .swiper-container-3d .swiper-slide-shadow-left,
+   .swiper-container-3d .swiper-slide-shadow-right
+    {
+     background-image:none;
+    }
+    .test .card 
+    {
+       position: relative;
+       width: 100%;
+        
+       background: #333;
+       padding: 60px 40px;
+       text-align: center;
+       overflow: hidden;
+   
+    }  
+    .test .card .layer 
+    {
+       position: absolute;
+       top: calc(100% - 2px);
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: linear-gradient(#03a9f4,#e91ee3);
+       z-index: 1;
+       transition: 0.5s;
+    }
+    .test .card:hover .layer
+    {
+       top: 0;
+   
+    }
+    .test .card .content
+    {
+       position: relative;
+       z-index: 2;
+    }
+    .test .card ,.content p
+    {
+       font-size: 18px;
+       line-height: 24px;
+       margin-bottom: 20px;
+       color: #fff;
+    }
+    .test .card .content .imgBx 
+    {
+       width: 100px;
+       height: 100px;
+       margin: 0 auto;
+       border-radius: 50%;
+       overflow: hidden;
+       border: 4px solid #fff;
+       box-shadow: o 10px 20px rgba(0, 0,0,0.2);
+    }
+    .test .card .content h2 
+    {
+       font-size: 18px;
+       color: #fff;
+    }
+    .test .card .content h2 span 
+    {
+       color: #03a9f4;
+       font-size: 14px;
+       transition: 0.5s;
+    }
+    .test .card:hover .content h2 span
+    {
+       color: #fff;
+    }
+
+
+section.sec-4{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+section.sec-4::after{
+    content:'';
+    display:block;
+    clear:both;
+
+}
+section.sec-4 article{
+    float:left;
+    width:45%;
+    height:550px;
+    margin-left: 5px;
+    background-color: rgb(236, 145, 9);
+}
+section.sec-4 aside{
+    width:45%;
+    float:right;
+    height:550px;
+    display:flex;
+    flex-direction:column;
+    /* background-color: rgb(243, 0, 0);*/
+} 
+section.sec-4 aside article{
+    width:100%;
+    background-color: rgb(185, 163, 163);
+    height:110%;
+
+       
+}
+#orderimg{
+    width:100%;
+    height: 550px;
+}
+
+.form {
+    margin: 25px;
+    
+  }
+  input,
+  select {
+    width: 400px;
+    padding: 5px;
+    
+  }
+  #mesBox{
+       height: 80px;
+  }
+  
+  label{
+    width:150px;
+    display:inline-block;
+  }
+
+  .btns1
+  {
+      display: flex;
+      justify-content:center;
+  }
+  .btn1
+  {
+      width: 120px;
+      padding: 5px;
+     margin-top: 15px;
+      font-size: 20px;
+      background-color:rgb(196, 73, 17);
+      color: white;
+      border: none;
+      border-radius: 10px;
+  }
+
+  .contact-section{
+    background:url("https://fineartmultiple.com/media/product/ed2/mount-everest-and-nuptse-nepal-rbo-41-1514541009-5-1ap-8e8.jpg") no-repeat center;
+    background-size:cover;
+    padding:20px 0;
+    margin-top: 10px;
+  }
+  .contact-section h1{
+    text-align:center;
+    color:#ddd;
+  }
+  .border{
+    width:100px;
+    height:10px;
+    background-color: #34495e;
+    margin:40px auto;
+  }
+  .contact-form{
+    max-width:600px;
+    margin:auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .contact-form-text{
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    margin:16px 0;
+    border:0;
+    background:#111;
+    padding:20px 40px;
+    outline:none;
+    color:#ddd;
+    transition:0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+textarea.contact-form-text{
+    resize: none;
+    height:100px;
+}
+.contact-form-btn{
+    float:right;
+    border:0;
+    background:#34495e;
+    color:#fff;
+    padding:12px 50px;
+    border-radius: 20px;
+    cursor:pointer;
+    transition:0.5s;
+    font-size: 20px;
+}
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+
+  
+footer{
+    margin-top: 15px;
+    background-color: rgb(207, 108, 16);
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+

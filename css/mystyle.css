@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container3{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ball {
+  width: 70px;
+  height: 70px;
+  background-image: linear-gradient(to bottom, yellow 50%, green 50%);
+  border-radius: 50%;
+  animation: bounce 2s infinite linear;
+}
+.shadow {
+  width: 50px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  opacity: 0.8;
+  animation: shadow 2s infinite linear;
+}
+ 
+@keyframes bounce {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-150px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#para1 {
+  font-family: arial;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.dot {
+  margin-left: 10px;  
+  font-weight: bolder;
+  font-size: 30px;
+  animation: animate 2s infinite linear;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-color: rgb(61, 60, 60);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+  border: 10px solid white;
+  position: relative;
+}
+.prev {
+  position: absolute;
+  top: 40%;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  left: 20px;
+}
+.next {
+  position: absolute;
+  top: 40%;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  right: 20px;
+}
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.461);
+  transition: 0.5s;
+  z-index: 10;
+}
+.nav-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.carousel-container img {
+  width: 980px;
+  height: 580px;
+}
+.item {
+  position: absolute;
+  display: none;
+}
+.main {
+  display: block;
+}
+.carousel-container {
+  position: relative;
+}
+.item .caption {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.365);
+  align-items: center;
+  color: white;
+  height: 40px;
+  font-size: 35px;
+}
